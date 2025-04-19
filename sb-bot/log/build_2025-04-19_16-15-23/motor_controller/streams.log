@@ -1,0 +1,37 @@
+[6.819s] Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/motor_controller': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/motor_controller build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/install.log --single-version-externally-managed install_data
+[9.665s] running egg_info
+[9.704s] creating ../build/motor_controller/motor_controller.egg-info
+[9.705s] writing ../build/motor_controller/motor_controller.egg-info/PKG-INFO
+[9.724s] writing dependency_links to ../build/motor_controller/motor_controller.egg-info/dependency_links.txt
+[9.724s] writing entry points to ../build/motor_controller/motor_controller.egg-info/entry_points.txt
+[9.725s] writing requirements to ../build/motor_controller/motor_controller.egg-info/requires.txt
+[9.733s] writing top-level names to ../build/motor_controller/motor_controller.egg-info/top_level.txt
+[9.734s] writing manifest file '../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[9.796s] reading manifest file '../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[9.808s] writing manifest file '../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[9.826s] running build
+[9.827s] running build_py
+[9.827s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build
+[9.844s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build/lib
+[9.845s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build/lib/motor_controller
+[9.854s] copying motor_controller/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build/lib/motor_controller
+[9.861s] copying motor_controller/motor_controller_node.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build/lib/motor_controller
+[9.872s] running install
+[9.876s] running install_lib
+[9.886s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages/motor_controller
+[9.890s] copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build/lib/motor_controller/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages/motor_controller
+[9.891s] copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build/lib/motor_controller/motor_controller_node.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages/motor_controller
+[9.907s] byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages/motor_controller/__init__.py to __init__.cpython-310.pyc
+[9.909s] byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages/motor_controller/motor_controller_node.py to motor_controller_node.cpython-310.pyc
+[9.929s] running install_data
+[9.932s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/ament_index
+[9.932s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/ament_index/resource_index
+[9.933s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/ament_index/resource_index/packages
+[9.936s] copying resource/motor_controller -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/ament_index/resource_index/packages
+[9.939s] copying package.xml -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller
+[9.942s] running install_egg_info
+[9.964s] Copying ../build/motor_controller/motor_controller.egg-info to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages/motor_controller-0.0.0-py3.10.egg-info
+[9.971s] running install_scripts
+[10.426s] Installing motor_controller_node script to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/motor_controller
+[10.430s] writing list of installed files to '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/install.log'
+[11.082s] Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/motor_controller' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/motor_controller build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/install.log --single-version-externally-managed install_data

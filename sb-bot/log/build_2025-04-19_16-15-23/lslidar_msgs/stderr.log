@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 28, in <module>
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 24, in main
+    generate_c(args.generator_arguments_file, args.typesupports)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_c/__init__.py", line 28, in generate_c
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 55, in generate_files
+    args = read_generator_arguments(generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 38, in read_generator_arguments
+    with open(input_file, mode='r', encoding='utf-8') as h:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_msgs/rosidl_typesupport_c__arguments.json'
+gmake[2]: *** [CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/build.make:116：rosidl_typesupport_c/lslidar_msgs/msg/lslidar_difop__type_support.cpp] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:342：CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

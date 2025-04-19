@@ -1,0 +1,37 @@
+[5.445s] Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/localization': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/localization build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/install.log --single-version-externally-managed install_data
+[6.496s] running egg_info
+[6.504s] creating ../build/localization/localization.egg-info
+[6.504s] writing ../build/localization/localization.egg-info/PKG-INFO
+[6.505s] writing dependency_links to ../build/localization/localization.egg-info/dependency_links.txt
+[6.505s] writing entry points to ../build/localization/localization.egg-info/entry_points.txt
+[6.505s] writing requirements to ../build/localization/localization.egg-info/requires.txt
+[6.505s] writing top-level names to ../build/localization/localization.egg-info/top_level.txt
+[6.508s] writing manifest file '../build/localization/localization.egg-info/SOURCES.txt'
+[6.514s] reading manifest file '../build/localization/localization.egg-info/SOURCES.txt'
+[6.525s] writing manifest file '../build/localization/localization.egg-info/SOURCES.txt'
+[6.526s] running build
+[6.526s] running build_py
+[6.527s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build
+[6.528s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build/lib
+[6.538s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build/lib/localization
+[6.538s] copying localization/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build/lib/localization
+[6.538s] running install
+[6.539s] running install_lib
+[6.539s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages/localization
+[6.539s] copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build/lib/localization/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages/localization
+[6.558s] byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages/localization/__init__.py to __init__.cpython-310.pyc
+[6.558s] running install_data
+[6.558s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/ament_index
+[6.559s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/ament_index/resource_index
+[6.559s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/ament_index/resource_index/packages
+[6.559s] copying resource/localization -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/ament_index/resource_index/packages
+[6.562s] copying package.xml -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization
+[6.562s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/launch
+[6.566s] copying launch/ekf_localization_launch.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/launch
+[6.566s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/config
+[6.569s] copying config/ekf.yaml -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/config
+[6.578s] running install_egg_info
+[6.594s] Copying ../build/localization/localization.egg-info to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages/localization-0.0.0-py3.10.egg-info
+[6.598s] running install_scripts
+[6.729s] writing list of installed files to '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/install.log'
+[7.018s] Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/localization' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/localization build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/install.log --single-version-externally-managed install_data

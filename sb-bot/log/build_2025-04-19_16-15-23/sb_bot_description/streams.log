@@ -1,0 +1,37 @@
+[5.311s] Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/sb_bot_description': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/sb_bot_description build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/install.log --single-version-externally-managed install_data
+[8.365s] running egg_info
+[8.366s] creating ../build/sb_bot_description/sb_bot_description.egg-info
+[8.367s] writing ../build/sb_bot_description/sb_bot_description.egg-info/PKG-INFO
+[8.370s] writing dependency_links to ../build/sb_bot_description/sb_bot_description.egg-info/dependency_links.txt
+[8.370s] writing entry points to ../build/sb_bot_description/sb_bot_description.egg-info/entry_points.txt
+[8.370s] writing requirements to ../build/sb_bot_description/sb_bot_description.egg-info/requires.txt
+[8.370s] writing top-level names to ../build/sb_bot_description/sb_bot_description.egg-info/top_level.txt
+[8.371s] writing manifest file '../build/sb_bot_description/sb_bot_description.egg-info/SOURCES.txt'
+[8.373s] reading manifest file '../build/sb_bot_description/sb_bot_description.egg-info/SOURCES.txt'
+[8.374s] writing manifest file '../build/sb_bot_description/sb_bot_description.egg-info/SOURCES.txt'
+[8.375s] running build
+[8.375s] running build_py
+[8.375s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build
+[8.376s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build/lib
+[8.376s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build/lib/sb_bot_description
+[8.377s] copying sb_bot_description/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build/lib/sb_bot_description
+[8.377s] running install
+[8.377s] running install_lib
+[8.386s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages/sb_bot_description
+[8.387s] copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build/lib/sb_bot_description/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages/sb_bot_description
+[8.388s] byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages/sb_bot_description/__init__.py to __init__.cpython-310.pyc
+[8.389s] running install_data
+[8.389s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/ament_index
+[8.389s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/ament_index/resource_index
+[8.389s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/ament_index/resource_index/packages
+[8.390s] copying resource/sb_bot_description -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/ament_index/resource_index/packages
+[8.390s] copying package.xml -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description
+[8.390s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/launch
+[8.391s] copying launch/display.launch.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/launch
+[8.391s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/urdf
+[8.391s] copying urdf/sb_robot.urdf.xacro -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/urdf
+[8.392s] running install_egg_info
+[8.396s] Copying ../build/sb_bot_description/sb_bot_description.egg-info to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages/sb_bot_description-0.0.0-py3.10.egg-info
+[8.399s] running install_scripts
+[8.604s] writing list of installed files to '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/install.log'
+[8.917s] Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/sb_bot_description' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/sb_bot_description build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/install.log --single-version-externally-managed install_data

@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/controller_bridge/controller_bridge.egg-info
+writing ../build/controller_bridge/controller_bridge.egg-info/PKG-INFO
+writing dependency_links to ../build/controller_bridge/controller_bridge.egg-info/dependency_links.txt
+writing entry points to ../build/controller_bridge/controller_bridge.egg-info/entry_points.txt
+writing requirements to ../build/controller_bridge/controller_bridge.egg-info/requires.txt
+writing top-level names to ../build/controller_bridge/controller_bridge.egg-info/top_level.txt
+writing manifest file '../build/controller_bridge/controller_bridge.egg-info/SOURCES.txt'
+reading manifest file '../build/controller_bridge/controller_bridge.egg-info/SOURCES.txt'
+writing manifest file '../build/controller_bridge/controller_bridge.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build
+creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib
+creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge
+copying controller_bridge/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge
+copying controller_bridge/controller_bridge.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge
+running install
+running install_lib
+creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge
+copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge
+copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge/controller_bridge.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge
+byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge/controller_bridge.py to controller_bridge.cpython-310.pyc
+running install_data
+creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/ament_index
+creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/ament_index/resource_index
+creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/ament_index/resource_index/packages
+copying resource/controller_bridge -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/ament_index/resource_index/packages
+copying package.xml -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge
+running install_egg_info
+Copying ../build/controller_bridge/controller_bridge.egg-info to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge-0.0.0-py3.10.egg-info
+running install_scripts
+Installing controller_bridge script to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/controller_bridge
+writing list of installed files to '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/install.log'

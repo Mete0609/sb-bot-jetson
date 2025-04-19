@@ -1,0 +1,37 @@
+[5.057s] Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/keyboard_control': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/keyboard_control build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/install.log --single-version-externally-managed install_data
+[6.290s] running egg_info
+[6.291s] creating ../build/keyboard_control/keyboard_control.egg-info
+[6.291s] writing ../build/keyboard_control/keyboard_control.egg-info/PKG-INFO
+[6.291s] writing dependency_links to ../build/keyboard_control/keyboard_control.egg-info/dependency_links.txt
+[6.291s] writing entry points to ../build/keyboard_control/keyboard_control.egg-info/entry_points.txt
+[6.292s] writing requirements to ../build/keyboard_control/keyboard_control.egg-info/requires.txt
+[6.292s] writing top-level names to ../build/keyboard_control/keyboard_control.egg-info/top_level.txt
+[6.292s] writing manifest file '../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[6.296s] reading manifest file '../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[6.298s] writing manifest file '../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[6.298s] running build
+[6.298s] running build_py
+[6.298s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build
+[6.298s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build/lib
+[6.299s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build/lib/keyboard_control
+[6.299s] copying keyboard_control/keyboard_drive_node.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build/lib/keyboard_control
+[6.299s] copying keyboard_control/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build/lib/keyboard_control
+[6.299s] running install
+[6.300s] running install_lib
+[6.313s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[6.314s] copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build/lib/keyboard_control/keyboard_drive_node.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[6.315s] copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build/lib/keyboard_control/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[6.317s] byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/keyboard_drive_node.py to keyboard_drive_node.cpython-310.pyc
+[6.330s] byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/__init__.py to __init__.cpython-310.pyc
+[6.339s] running install_data
+[6.339s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/ament_index
+[6.339s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/ament_index/resource_index
+[6.339s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/ament_index/resource_index/packages
+[6.339s] copying resource/keyboard_control -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/ament_index/resource_index/packages
+[6.340s] copying package.xml -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control
+[6.340s] running install_egg_info
+[6.348s] Copying ../build/keyboard_control/keyboard_control.egg-info to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages/keyboard_control-0.0.0-py3.10.egg-info
+[6.355s] running install_scripts
+[6.558s] Installing keyboard_drive script to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/keyboard_control
+[6.573s] writing list of installed files to '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/install.log'
+[6.993s] Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/keyboard_control' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/keyboard_control build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/install.log --single-version-externally-managed install_data

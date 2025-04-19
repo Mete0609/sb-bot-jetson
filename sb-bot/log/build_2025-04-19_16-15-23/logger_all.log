@@ -1,0 +1,489 @@
+[0.265s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-ignore', 'lslidar_msg']
+[0.265s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=['lslidar_msg'], packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff81102c50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff81101ba0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff81101ba0>>)
+[0.671s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.672s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extension 'ignore'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extension 'ignore_ament_install'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extensions ['colcon_pkg']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extension 'colcon_pkg'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extensions ['colcon_meta']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extension 'colcon_meta'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extensions ['ros']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(bringup) by extension 'ros'
+[0.708s] DEBUG:colcon.colcon_core.package_identification:Package 'bringup' with type 'ros.ament_python' and name 'bringup'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extension 'ignore_ament_install'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extensions ['colcon_pkg']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extension 'colcon_pkg'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extensions ['colcon_meta']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extension 'colcon_meta'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extensions ['ros']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(controller_bridge) by extension 'ros'
+[0.712s] DEBUG:colcon.colcon_core.package_identification:Package 'controller_bridge' with type 'ros.ament_python' and name 'controller_bridge'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extensions ['ignore', 'ignore_ament_install']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extension 'ignore'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extension 'ignore_ament_install'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extensions ['colcon_pkg']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extension 'colcon_pkg'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extensions ['colcon_meta']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extension 'colcon_meta'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extensions ['ros']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(imu_node) by extension 'ros'
+[0.714s] DEBUG:colcon.colcon_core.package_identification:Package 'imu_node' with type 'ros.ament_python' and name 'imu_node'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extensions ['ignore', 'ignore_ament_install']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extension 'ignore'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extension 'ignore_ament_install'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extensions ['colcon_pkg']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extension 'colcon_pkg'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extensions ['colcon_meta']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extension 'colcon_meta'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extensions ['ros']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(keyboard_control) by extension 'ros'
+[0.717s] DEBUG:colcon.colcon_core.package_identification:Package 'keyboard_control' with type 'ros.ament_python' and name 'keyboard_control'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extensions ['ignore', 'ignore_ament_install']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extension 'ignore'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extension 'ignore_ament_install'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extensions ['colcon_pkg']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extension 'colcon_pkg'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extensions ['colcon_meta']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extension 'colcon_meta'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extensions ['ros']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(localization) by extension 'ros'
+[0.719s] DEBUG:colcon.colcon_core.package_identification:Package 'localization' with type 'ros.ament_python' and name 'localization'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extension 'ignore'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extension 'ignore_ament_install'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extensions ['colcon_pkg']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extension 'colcon_pkg'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extensions ['colcon_meta']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extension 'colcon_meta'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extensions ['ros']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_driver) by extension 'ros'
+[0.723s] DEBUG:colcon.colcon_core.package_identification:Package 'lslidar_driver' with type 'ros.ament_cmake' and name 'lslidar_driver'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extension 'ignore'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extension 'ignore_ament_install'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extensions ['colcon_pkg']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extension 'colcon_pkg'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extensions ['colcon_meta']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extension 'colcon_meta'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extensions ['ros']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(lslidar_msgs) by extension 'ros'
+[0.725s] DEBUG:colcon.colcon_core.package_identification:Package 'lslidar_msgs' with type 'ros.ament_cmake' and name 'lslidar_msgs'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extension 'ignore'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extension 'ignore_ament_install'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extensions ['colcon_pkg']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extension 'colcon_pkg'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extensions ['colcon_meta']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extension 'colcon_meta'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extensions ['ros']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(motor_controller) by extension 'ros'
+[0.727s] DEBUG:colcon.colcon_core.package_identification:Package 'motor_controller' with type 'ros.ament_python' and name 'motor_controller'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extension 'ignore'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extension 'ignore_ament_install'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extensions ['colcon_pkg']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extension 'colcon_pkg'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extensions ['colcon_meta']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extension 'colcon_meta'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extensions ['ros']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(sb_bot_description) by extension 'ros'
+[0.729s] DEBUG:colcon.colcon_core.package_identification:Package 'sb_bot_description' with type 'ros.ament_python' and name 'sb_bot_description'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ignore', 'ignore_ament_install']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore_ament_install'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_pkg']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_pkg'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_meta']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_meta'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ros']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ros'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['cmake', 'python']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'cmake'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['python_setup_py']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python_setup_py'
+[0.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.779s] WARNING:colcon.colcon_core.package_discovery:ignoring unknown package 'lslidar_msg' in --packages-ignore
+[0.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.787s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install
+[0.790s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 296 installed packages in /opt/ros/humble
+[0.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.923s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_args' from command line to 'None'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target' from command line to 'None'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.924s] DEBUG:colcon.colcon_core.verb:Building package 'bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/bringup', 'symlink_install': False, 'test_result_base': None}
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'cmake_args' from command line to 'None'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'cmake_target' from command line to 'None'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'controller_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.926s] DEBUG:colcon.colcon_core.verb:Building package 'controller_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/controller_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'cmake_args' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'cmake_target' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'imu_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.927s] DEBUG:colcon.colcon_core.verb:Building package 'imu_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/imu_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/imu_node', 'symlink_install': False, 'test_result_base': None}
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_args' from command line to 'None'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target' from command line to 'None'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.929s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/keyboard_control', 'symlink_install': False, 'test_result_base': None}
+[0.930s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_args' from command line to 'None'
+[0.930s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_target' from command line to 'None'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.931s] DEBUG:colcon.colcon_core.verb:Building package 'localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/localization', 'symlink_install': False, 'test_result_base': None}
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_target' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.932s] DEBUG:colcon.colcon_core.verb:Building package 'lslidar_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/lslidar_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_args' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_target' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.934s] DEBUG:colcon.colcon_core.verb:Building package 'motor_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/motor_controller', 'symlink_install': False, 'test_result_base': None}
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'cmake_target' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'sb_bot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.935s] DEBUG:colcon.colcon_core.verb:Building package 'sb_bot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/sb_bot_description', 'symlink_install': False, 'test_result_base': None}
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_args' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_target' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.936s] DEBUG:colcon.colcon_core.verb:Building package 'lslidar_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_driver', 'merge_install': False, 'path': '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/lslidar_driver', 'symlink_install': False, 'test_result_base': None}
+[0.937s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.939s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.940s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/lslidar_msgs' with build type 'ament_cmake'
+[0.940s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/lslidar_msgs'
+[0.946s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.947s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.947s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.959s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/bringup' with build type 'ament_python'
+[0.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'ament_prefix_path')
+[0.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/hook/ament_prefix_path.ps1'
+[0.962s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/hook/ament_prefix_path.dsv'
+[0.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/hook/ament_prefix_path.sh'
+[0.965s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.965s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.977s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/controller_bridge' with build type 'ament_python'
+[0.978s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_bridge', 'ament_prefix_path')
+[0.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/hook/ament_prefix_path.ps1'
+[0.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/hook/ament_prefix_path.dsv'
+[0.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/hook/ament_prefix_path.sh'
+[0.982s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.983s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.990s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/imu_node' with build type 'ament_python'
+[0.991s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_node', 'ament_prefix_path')
+[0.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/hook/ament_prefix_path.ps1'
+[0.994s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/hook/ament_prefix_path.dsv'
+[0.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/hook/ament_prefix_path.sh'
+[0.996s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.996s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.004s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/keyboard_control' with build type 'ament_python'
+[1.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_control', 'ament_prefix_path')
+[1.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.ps1'
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.dsv'
+[1.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/hook/ament_prefix_path.sh'
+[1.019s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.020s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.038s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/localization' with build type 'ament_python'
+[1.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('localization', 'ament_prefix_path')
+[1.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/hook/ament_prefix_path.ps1'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/hook/ament_prefix_path.dsv'
+[1.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/hook/ament_prefix_path.sh'
+[1.049s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.049s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/sb_bot_description:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/motor_controller:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/localization:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/keyboard_control:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/imu_node:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/imu_driver:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/controller_bridge:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/bringup:/opt/ros/humble /usr/bin/cmake /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/lslidar_msgs -DCMAKE_INSTALL_PREFIX=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs
+[1.915s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/bringup'
+[1.916s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.916s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.693s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/controller_bridge'
+[2.694s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.694s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.488s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/imu_node'
+[3.489s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.490s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.173s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/keyboard_control'
+[4.174s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.174s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.866s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/localization'
+[4.867s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.867s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/keyboard_control': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/keyboard_control build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/install.log --single-version-externally-managed install_data
+[6.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/controller_bridge': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/controller_bridge build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/install.log --single-version-externally-managed install_data
+[6.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/localization': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/localization build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/install.log --single-version-externally-managed install_data
+[6.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/bringup': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/bringup build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/bringup/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/bringup/install.log --single-version-externally-managed install_data
+[6.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/imu_node': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/imu_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/imu_node build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/imu_node/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/imu_node/install.log --single-version-externally-managed install_data
+[7.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/sb_bot_description:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/motor_controller:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/localization:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/keyboard_control:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/imu_node:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/imu_driver:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/controller_bridge:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/bringup:/opt/ros/humble /usr/bin/cmake /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/lslidar_msgs -DCMAKE_INSTALL_PREFIX=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs
+[7.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/sb_bot_description:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/motor_controller:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/localization:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/keyboard_control:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/imu_node:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/imu_driver:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/controller_bridge:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_msgs -- -j6 -l6
+[7.861s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/imu_node' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/imu_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/imu_node build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/imu_node/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/imu_node/install.log --single-version-externally-managed install_data
+[7.880s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node' for CMake module files
+[7.881s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node' for CMake config files
+[7.884s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/lib'
+[7.887s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/bin'
+[7.892s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/lib/pkgconfig/imu_node.pc'
+[7.894s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/lib/python3.10/site-packages'
+[7.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_node', 'pythonpath')
+[7.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/hook/pythonpath.ps1'
+[7.898s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/hook/pythonpath.dsv'
+[7.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/hook/pythonpath.sh'
+[7.900s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/bin'
+[7.901s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_node)
+[7.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/package.ps1'
+[7.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/package.dsv'
+[7.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/package.sh'
+[7.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/package.bash'
+[7.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/imu_node/package.zsh'
+[7.934s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/imu_node/share/colcon-core/packages/imu_node)
+[7.938s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/motor_controller' with build type 'ament_python'
+[7.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_controller', 'ament_prefix_path')
+[7.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/hook/ament_prefix_path.ps1'
+[7.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/hook/ament_prefix_path.dsv'
+[7.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/hook/ament_prefix_path.sh'
+[7.955s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.955s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.996s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control' for CMake module files
+[7.999s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control' for CMake config files
+[7.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/keyboard_control' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/keyboard_control build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/keyboard_control/install.log --single-version-externally-managed install_data
+[8.000s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib'
+[8.001s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/bin'
+[8.002s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/pkgconfig/keyboard_control.pc'
+[8.003s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/lib/python3.10/site-packages'
+[8.003s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_control', 'pythonpath')
+[8.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/hook/pythonpath.ps1'
+[8.005s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/hook/pythonpath.dsv'
+[8.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/hook/pythonpath.sh'
+[8.008s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/bin'
+[8.008s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_control)
+[8.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/package.ps1'
+[8.018s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/package.dsv'
+[8.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/package.sh'
+[8.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/package.bash'
+[8.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/keyboard_control/package.zsh'
+[8.023s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/keyboard_control/share/colcon-core/packages/keyboard_control)
+[8.027s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/sb_bot_description' with build type 'ament_python'
+[8.028s] Level 1:colcon.colcon_core.shell:create_environment_hook('sb_bot_description', 'ament_prefix_path')
+[8.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/hook/ament_prefix_path.ps1'
+[8.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/hook/ament_prefix_path.dsv'
+[8.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/hook/ament_prefix_path.sh'
+[8.037s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.038s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.055s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization' for CMake module files
+[8.058s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization' for CMake config files
+[8.060s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib'
+[8.060s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/bin'
+[8.060s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/pkgconfig/localization.pc'
+[8.061s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages'
+[8.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('localization', 'pythonpath')
+[8.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/hook/pythonpath.ps1'
+[8.063s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/hook/pythonpath.dsv'
+[8.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/localization' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/localization build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/localization/install.log --single-version-externally-managed install_data
+[8.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/hook/pythonpath.sh'
+[8.067s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/bin'
+[8.067s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(localization)
+[8.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/package.ps1'
+[8.072s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/package.dsv'
+[8.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/package.sh'
+[8.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/package.bash'
+[8.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/localization/package.zsh'
+[8.080s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/localization/share/colcon-core/packages/localization)
+[8.082s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge' for CMake module files
+[8.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/controller_bridge' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/controller_bridge build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/install.log --single-version-externally-managed install_data
+[8.085s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge' for CMake config files
+[8.087s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib'
+[8.087s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/bin'
+[8.088s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/pkgconfig/controller_bridge.pc'
+[8.088s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages'
+[8.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_bridge', 'pythonpath')
+[8.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/hook/pythonpath.ps1'
+[8.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/hook/pythonpath.dsv'
+[8.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/hook/pythonpath.sh'
+[8.093s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/bin'
+[8.093s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_bridge)
+[8.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/package.ps1'
+[8.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/package.dsv'
+[8.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/package.sh'
+[8.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/package.bash'
+[8.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge/package.zsh'
+[8.113s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/colcon-core/packages/controller_bridge)
+[9.230s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/motor_controller'
+[9.231s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.231s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.884s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/sb_bot_description'
+[10.885s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.885s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.920s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup' for CMake module files
+[10.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/bringup' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/bringup build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/bringup/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/bringup/install.log --single-version-externally-managed install_data
+[10.923s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup' for CMake config files
+[10.941s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/lib'
+[10.941s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/bin'
+[10.942s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/lib/pkgconfig/bringup.pc'
+[10.943s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/lib/python3.10/site-packages'
+[10.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'pythonpath')
+[10.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/hook/pythonpath.ps1'
+[10.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/hook/pythonpath.dsv'
+[10.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/hook/pythonpath.sh'
+[10.964s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/bin'
+[10.965s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup)
+[10.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/package.ps1'
+[10.983s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/package.dsv'
+[10.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/package.sh'
+[10.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/package.bash'
+[10.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/bringup/package.zsh'
+[10.993s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/bringup/share/colcon-core/packages/bringup)
+[13.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/sb_bot_description': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/sb_bot_description build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/install.log --single-version-externally-managed install_data
+[14.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/motor_controller': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/motor_controller build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/install.log --single-version-externally-managed install_data
+[16.943s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description' for CMake module files
+[16.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/sb_bot_description' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/sb_bot_description build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/sb_bot_description/install.log --single-version-externally-managed install_data
+[16.946s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description' for CMake config files
+[16.948s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib'
+[16.948s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/bin'
+[16.948s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/pkgconfig/sb_bot_description.pc'
+[16.949s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/lib/python3.10/site-packages'
+[16.949s] Level 1:colcon.colcon_core.shell:create_environment_hook('sb_bot_description', 'pythonpath')
+[16.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/hook/pythonpath.ps1'
+[16.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/hook/pythonpath.dsv'
+[16.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/hook/pythonpath.sh'
+[17.005s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/bin'
+[17.007s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sb_bot_description)
+[17.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/package.ps1'
+[17.047s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/package.dsv'
+[17.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/package.sh'
+[17.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/package.bash'
+[17.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/sb_bot_description/package.zsh'
+[17.122s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/sb_bot_description/share/colcon-core/packages/sb_bot_description)
+[19.018s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller' for CMake module files
+[19.020s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller' for CMake config files
+[19.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/motor_controller' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/motor_controller build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/motor_controller/install.log --single-version-externally-managed install_data
+[19.025s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib'
+[19.027s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/bin'
+[19.027s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/pkgconfig/motor_controller.pc'
+[19.028s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/lib/python3.10/site-packages'
+[19.028s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_controller', 'pythonpath')
+[19.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/hook/pythonpath.ps1'
+[19.035s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/hook/pythonpath.dsv'
+[19.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/hook/pythonpath.sh'
+[19.045s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/bin'
+[19.046s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_controller)
+[19.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/package.ps1'
+[19.061s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/package.dsv'
+[19.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/package.sh'
+[19.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/package.bash'
+[19.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/motor_controller/package.zsh'
+[19.081s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/motor_controller/share/colcon-core/packages/motor_controller)
+[26.301s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lslidar_msgs)
+[26.302s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs' for CMake module files
+[26.303s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs' for CMake config files
+[26.304s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/bin'
+[26.304s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/lib/pkgconfig/lslidar_msgs.pc'
+[26.305s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/lib/python3.10/site-packages'
+[26.306s] Level 1:colcon.colcon_core.environment:checking '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/bin'
+[26.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/share/lslidar_msgs/package.ps1'
+[26.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/sb_bot_description:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/motor_controller:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/localization:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/keyboard_control:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/imu_node:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/imu_driver:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/controller_bridge:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/lslidar_msgs -- -j6 -l6
+[26.323s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/share/lslidar_msgs/package.dsv'
+[26.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/share/lslidar_msgs/package.sh'
+[26.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/share/lslidar_msgs/package.bash'
+[26.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/share/lslidar_msgs/package.zsh'
+[26.349s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/lslidar_msgs/share/colcon-core/packages/lslidar_msgs)
+[26.373s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[26.374s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[26.383s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[26.385s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[26.439s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[26.440s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[26.440s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[26.548s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[26.549s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/local_setup.ps1'
+[26.555s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/_local_setup_util_ps1.py'
+[26.561s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/setup.ps1'
+[26.581s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/local_setup.sh'
+[26.585s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/_local_setup_util_sh.py'
+[26.592s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/setup.sh'
+[26.604s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/local_setup.bash'
+[26.622s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/setup.bash'
+[26.641s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/local_setup.zsh'
+[26.653s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/setup.zsh'

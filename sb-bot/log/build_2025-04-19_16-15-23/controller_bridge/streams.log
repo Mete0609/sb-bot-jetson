@@ -1,0 +1,37 @@
+[5.488s] Invoking command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/controller_bridge': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/controller_bridge build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/install.log --single-version-externally-managed install_data
+[6.480s] running egg_info
+[6.482s] creating ../build/controller_bridge/controller_bridge.egg-info
+[6.482s] writing ../build/controller_bridge/controller_bridge.egg-info/PKG-INFO
+[6.483s] writing dependency_links to ../build/controller_bridge/controller_bridge.egg-info/dependency_links.txt
+[6.483s] writing entry points to ../build/controller_bridge/controller_bridge.egg-info/entry_points.txt
+[6.483s] writing requirements to ../build/controller_bridge/controller_bridge.egg-info/requires.txt
+[6.483s] writing top-level names to ../build/controller_bridge/controller_bridge.egg-info/top_level.txt
+[6.483s] writing manifest file '../build/controller_bridge/controller_bridge.egg-info/SOURCES.txt'
+[6.484s] reading manifest file '../build/controller_bridge/controller_bridge.egg-info/SOURCES.txt'
+[6.484s] writing manifest file '../build/controller_bridge/controller_bridge.egg-info/SOURCES.txt'
+[6.484s] running build
+[6.484s] running build_py
+[6.484s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build
+[6.484s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib
+[6.484s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge
+[6.484s] copying controller_bridge/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge
+[6.485s] copying controller_bridge/controller_bridge.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge
+[6.485s] running install
+[6.485s] running install_lib
+[6.488s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge
+[6.490s] copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge/__init__.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge
+[6.492s] copying /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build/lib/controller_bridge/controller_bridge.py -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge
+[6.499s] byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge/__init__.py to __init__.cpython-310.pyc
+[6.499s] byte-compiling /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge/controller_bridge.py to controller_bridge.cpython-310.pyc
+[6.501s] running install_data
+[6.501s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/ament_index
+[6.501s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/ament_index/resource_index
+[6.501s] creating /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/ament_index/resource_index/packages
+[6.502s] copying resource/controller_bridge -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/ament_index/resource_index/packages
+[6.502s] copying package.xml -> /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/share/controller_bridge
+[6.502s] running install_egg_info
+[6.507s] Copying ../build/controller_bridge/controller_bridge.egg-info to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages/controller_bridge-0.0.0-py3.10.egg-info
+[6.515s] running install_scripts
+[6.619s] Installing controller_bridge script to /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/controller_bridge
+[6.619s] writing list of installed files to '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/install.log'
+[7.106s] Invoked command in '/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/controller_bridge' returned '0': PYTHONPATH=/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/install/controller_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/controller_bridge build --build-base /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/build install --record /home/sb-bot/ros2_ws/robot-driver-main/sb_bot_ws/src/sb-bot/build/controller_bridge/install.log --single-version-externally-managed install_data
