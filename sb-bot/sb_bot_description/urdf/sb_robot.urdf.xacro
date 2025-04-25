@@ -6,7 +6,7 @@
   <joint name="base_joint" type="fixed">
     <parent link="base_footprint" />
     <child link="base_link" />
-    <origin xyz="0 0 0.062" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </joint>
 
   <link name="base_link">
@@ -51,11 +51,11 @@
     </link>
   </xacro:macro>
 
-  <!-- IMU -->
-  <joint name="base_link_to_imu" type="fixed">
-    <parent link="base_link" />
-    <child link="imu" />
-    <origin xyz="0 -0.1 0.01" rpy="0 0 0" />
+  <!-- radar -->
+    <joint name="base_link_to_radar" type="fixed">
+      <parent link="base_link" />
+      <child link="radar" />
+    <origin xyz="0.15 0 0" rpy="0 0 0" />
   </joint>
   <link name="imu">
     <visual>
@@ -63,17 +63,17 @@
       <geometry>
         <box size="0.03 0.03 0.01" />
       </geometry>
-      <material name="imu_material">
+      <material name="radar_material">
         <color rgba="0.84 0.96 0.01 1" />
       </material>
     </visual>
   </link>
 
-  <!-- Radar -->
-  <joint name="base_link_to_radar" type="fixed">
+  <!-- imu -->
+  <joint name="base_link_to_imu" type="fixed">
     <parent link="base_link" />
-    <child link="radar" />
-    <origin xyz="0 0.15 0" rpy="0 0 0" />
+    <child link="imu" />
+    <origin xyz="-0.1 0 0.01" rpy="0 0 0" />
   </joint>
   <link name="radar">
     <visual>
@@ -81,23 +81,34 @@
       <geometry>
         <cylinder radius="0.03" length="0.03" />
       </geometry>
-      <material name="radar_material">
+      <material name="imu_material">
         <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
 
   <!-- Wheels -->
-  <xacro:macro name="wheel" params="side x">
+  <xacro:macro name="wheel" params="side y">
+    <!-- 设置转轴方向：右轮需要反转 -->
+    <xacro:if value="${side == 'right'}">
+      <xacro:property name="axis_dir" value="1"/>
+    </xacro:if>
+    <xacro:if value="${side == 'left'}">
+      <xacro:property name="axis_dir" value="1"/>
+    </xacro:if>
+
+    <!-- 轮子关节 -->
     <joint name="base_link_to_${side}_wheel" type="continuous">
       <parent link="base_link" />
       <child link="${side}_wheel" />
-      <origin xyz="${x} 0 0" rpy="0 -1.57 0" />
-      <axis xyz="0 0 1" />
+      <origin xyz="0 ${y} -0.05" rpy="0 0 0"/> <!-- 0.063 为轮子半径，避免穿地 -->
+      <axis xyz="0 ${axis_dir} 0"/>
     </joint>
+
+    <!-- 轮子模型 -->
     <link name="${side}_wheel">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="1.57079 0 0" /> <!-- 绕 X 轴转 90° 躺平 -->
         <geometry>
           <cylinder radius="0.063" length="0.02" />
         </geometry>
@@ -108,8 +119,10 @@
     </link>
   </xacro:macro>
 
-  <xacro:wheel side="left" x="-0.19"/>
-  <xacro:wheel side="right" x="0.19"/>
+  <!-- 调用左右轮 -->
+  <xacro:wheel side="left" y="0.19"/>
+  <xacro:wheel side="right" y="-0.19"/>
+
 
   <!-- Top Plate -->
   <joint name="base_link_to_top" type="fixed">

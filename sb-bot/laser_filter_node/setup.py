@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'controller_bridge'
+package_name = 'laser_filter_node'
 
 setup(
     name=package_name,
@@ -14,13 +14,12 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='sb-bot',
-    maintainer_email='sb-bot@todo.todo',
+    maintainer_email='1462150552@qq.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'controller_bridge_node = controller_bridge.controller_bridge_node:main'
         ],
     },
 )

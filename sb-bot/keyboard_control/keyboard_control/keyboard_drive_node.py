@@ -11,8 +11,8 @@ class KeyboardDriveNode(Node):
     def __init__(self):
         super().__init__('keyboard_drive_node')
         self.pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.linear_speed = 0.2  # m/s
-        self.angular_speed = 1.0  # rad/s
+        self.linear_speed = 0.25  # m/s
+        self.angular_speed = 0.6 # rad/s
         self.print_help()
         self.run()
 
@@ -38,10 +38,10 @@ class KeyboardDriveNode(Node):
                     twist.linear.x = -self.linear_speed
                     twist.angular.z = 0.0
                 elif key == 'a':
-                    twist.linear.x = 0.0
+                    twist.linear.x = 0.2
                     twist.angular.z = self.angular_speed
                 elif key == 'd':
-                    twist.linear.x = 0.0
+                    twist.linear.x = 0.2
                     twist.angular.z = -self.angular_speed
                 elif key == 'x':
                     twist.linear.x = 0.0

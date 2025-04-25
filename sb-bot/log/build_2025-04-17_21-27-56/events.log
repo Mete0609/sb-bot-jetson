@@ -1,3 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.002645] (-) JobUnselected: {'identifier': 'motor_controller'}
-[0.002866] (-) EventReactorShutdown: {}

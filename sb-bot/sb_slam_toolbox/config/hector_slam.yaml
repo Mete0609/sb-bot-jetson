@@ -1,0 +1,17 @@
+slam_toolbox:
+  ros__parameters:
+    use_sim_time: false
+    map_update_interval: 2.0
+    resolution: 0.05
+    max_laser_range: 10.0
+    minimum_time_interval: 0.2
+    transform_publish_period: 0.05
+    scan_topic: /scan_filtered
+    mode: mapping
+    map_frame: map
+    base_frame: base_footprint
+    odom_frame: odom
+    scan_match_resolution: 0.05
+    loop_detection_period: 5.0
+    optimizer_max_iterations: 10
+    minimum_score: 0.4  # 放宽匹配要求

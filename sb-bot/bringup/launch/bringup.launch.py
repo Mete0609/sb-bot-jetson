@@ -4,7 +4,7 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 import os
-
+import xacro
 
 def generate_launch_description():
 
@@ -13,7 +13,7 @@ def generate_launch_description():
     motor_controller_pkg = 'motor_controller'
     controller_bridge_pkg = 'controller_bridge'
     lslidar_pkg = 'lslidar_driver'
-    localization_pkg = 'localization'
+    # localization_pkg = 'localization'
     description_pkg = 'sb_bot_description'
 
     lslidar_param = os.path.join(
@@ -21,27 +21,26 @@ def generate_launch_description():
         'params', 'lidar_uart_ros2', 'lsn10p.yaml'
     )
 
-    ekf_param = os.path.join(
-        get_package_share_directory(localization_pkg),
-        'config', 'ekf.yaml'
+    # urdf_file = os.path.join(
+    #     get_package_share_directory('sb_bot_description'),
+    #     'urdf',
+    #     'sb_robot.urdf.xacro'
+    # )
+
+    # 使用 xacro 解析文件并转换为 XML 字符串
+    # robot_description_config = xacro.process_file(urdf_file)
+    # robot_description = robot_description_config.toxml()
+    display_launch_path = os.path.join(
+        get_package_share_directory(description_pkg),
+        'launch',
+        'display.launch.py'
     )
 
+    # 返回 LaunchDescription 对象
     return LaunchDescription([
-        # 机器人描述发布
-        Node(
-            package='robot_state_publisher',   
-            executable='robot_state_publisher',
-            name='robot_state_publisher',
-            output='screen',
-            parameters=[
-                {'use_sim_time': False,
-                'robot_description': os.popen(
-                    f"xacro {os.path.join(get_package_share_directory('sb_bot_description'), 'urdf', 'sb_robot.urdf.xacro')}"
-                ).read()
-                }
-            ]
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(display_launch_path)
         ),
-
         # IMU节点
         Node(
             package=imu_node_pkg,
@@ -61,7 +60,7 @@ def generate_launch_description():
         # 控制桥接节点
         Node(
             package=controller_bridge_pkg,
-            executable='controller_bridge',
+            executable='controller_bridge_node',
             name='controller_bridge_node',
             output='screen'
         ),
@@ -85,4 +84,21 @@ def generate_launch_description():
                 )
             )
         ),
+
+        Node(
+            package='laser_filters',  # ✅ 启动的是 laser_filters 包中的功能节点
+            executable='scan_to_scan_filter_chain',
+            name='laser_filter_node',
+            output='screen',
+            parameters=[os.path.join(
+                get_package_share_directory('laser_filter_node'),  # ✅ 这是你自己包的名字！
+                'config',
+                'box_filter.yaml'
+            )],
+            remappings=[
+                ('scan', '/scan'),
+                ('scan_filtered', '/scan_filtered')
+            ]
+        )
+
     ])

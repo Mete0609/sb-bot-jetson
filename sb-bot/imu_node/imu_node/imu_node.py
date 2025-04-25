@@ -5,26 +5,31 @@ from geometry_msgs.msg import Quaternion
 import serial
 import struct
 import math
-from builtin_interfaces.msg import Time
+import tf_transformations
 
 class IMUSerialNode(Node):
     def __init__(self):
         super().__init__('imu_node')
 
-        # 串口配置
         self.ser = serial.Serial('/dev/imu_serial', baudrate=115200, timeout=0.05)
         self.buffer = bytearray()
 
-        # 最新数据缓存
         self.latest_quat = None
         self.latest_gyro = None
         self.latest_accel = None
 
-        # 发布器
         self.publisher_ = self.create_publisher(Imu, 'imu/data', 10)
 
-        # 定时读取串口
-        self.timer = self.create_timer(0.02, self.read_serial)  # 50Hz
+        self.initial_quaternion = None
+        self.zero_initialized = False
+        self.allow_zeroing = False
+        self.create_timer(1.0, self.enable_zeroing)
+
+        self.timer = self.create_timer(0.02, self.read_serial)
+
+    def enable_zeroing(self):
+        self.allow_zeroing = True
+        self.get_logger().info("🕒 允许记录 IMU 初始姿态为零点")
 
     def read_serial(self):
         try:
@@ -41,7 +46,7 @@ class IMUSerialNode(Node):
 
                 frame_id = self.buffer[2]
                 data_len = self.buffer[3]
-                frame_len = 5 + data_len  # 2帧头 + ID + LEN + 数据 + 校验
+                frame_len = 5 + data_len
 
                 if len(self.buffer) < frame_len:
                     break
@@ -58,9 +63,7 @@ class IMUSerialNode(Node):
                     elif frame_id == 0x03:
                         self.parse_gyro_accel_data(frame)
                 else:
-                    self.get_logger().warn(
-                        f"❌ 帧校验失败: ID=0x{frame_id:02X}, calc=0x{checksum:02X}, actual=0x{actual:02X}, raw={frame.hex()}"
-                    )
+                    self.get_logger().warn(f"❌ 帧校验失败: ID=0x{frame_id:02X}, calc=0x{checksum:02X}, actual=0x{actual:02X}, raw={frame.hex()}")
 
                 self.buffer = self.buffer[frame_len:]
 
@@ -71,11 +74,12 @@ class IMUSerialNode(Node):
         roll = struct.unpack('<h', frame[4:6])[0] / 32768.0 * 180.0
         pitch = struct.unpack('<h', frame[6:8])[0] / 32768.0 * 180.0
         yaw = struct.unpack('<h', frame[8:10])[0] / 32768.0 * 180.0
-        self.get_logger().info(f"🎯 姿态角 => Roll: {roll:.2f}°, Pitch: {pitch:.2f}°, Yaw: {yaw:.2f}°")
+        # self.get_logger().info(f"🎯 姿态角 => Roll: {roll:.2f}°, Pitch: {pitch:.2f}°, Yaw: {yaw:.2f}°")
 
     def parse_quaternion_data(self, frame):
         if len(frame) != 13:
             return
+
         checksum = sum(frame[0:12]) & 0xFF
         actual = frame[12] & 0xFF
         if checksum != actual:
@@ -87,7 +91,22 @@ class IMUSerialNode(Node):
         q2 = struct.unpack('<h', frame[8:10])[0] / 32768.0
         q3 = struct.unpack('<h', frame[10:12])[0] / 32768.0
 
-        self.latest_quat = Quaternion(x=q1, y=q2, z=q3, w=q0)
+        current_q = [q1, q2, q3, q0]
+
+        if self.initial_quaternion is None and self.allow_zeroing and not self.zero_initialized:
+            self.initial_quaternion = current_q
+            self.zero_initialized = True
+            self.get_logger().info("✅ 当前姿态已记录为初始零点")
+
+        if self.initial_quaternion is not None:
+            q_offset_inv = tf_transformations.quaternion_inverse(self.initial_quaternion)
+            relative_q = tf_transformations.quaternion_multiply(current_q, q_offset_inv)
+            roll, pitch, yaw = tf_transformations.euler_from_quaternion(relative_q)
+            #self.get_logger().info(f"相对零点姿态角: Roll={math.degrees(roll):.2f}°, Pitch={math.degrees(pitch):.2f}°, Yaw={math.degrees(yaw):.2f}°")
+            self.latest_quat = Quaternion(x=relative_q[0], y=relative_q[1], z=relative_q[2], w=relative_q[3])
+        else:
+            self.latest_quat = Quaternion(x=current_q[0], y=current_q[1], z=current_q[2], w=current_q[3])
+
         self.publish_imu()
 
     def parse_gyro_accel_data(self, frame):
@@ -132,16 +151,13 @@ class IMUSerialNode(Node):
         imu_msg.header.frame_id = "imu_link"
 
         imu_msg.orientation = self.latest_quat
-
         imu_msg.angular_velocity.x = math.radians(self.latest_gyro[0])
         imu_msg.angular_velocity.y = math.radians(self.latest_gyro[1])
         imu_msg.angular_velocity.z = math.radians(self.latest_gyro[2])
-
         imu_msg.linear_acceleration.x = self.latest_accel[0]
         imu_msg.linear_acceleration.y = self.latest_accel[1]
         imu_msg.linear_acceleration.z = self.latest_accel[2]
 
-        # 添加协方差
         imu_msg.orientation_covariance = [0.02, 0.0, 0.0,
                                           0.0, 0.02, 0.0,
                                           0.0, 0.0, 0.02]
@@ -151,9 +167,7 @@ class IMUSerialNode(Node):
         imu_msg.linear_acceleration_covariance = [0.1, 0.0, 0.0,
                                                   0.0, 0.1, 0.0,
                                                   0.0, 0.0, 0.1]
-
         self.publisher_.publish(imu_msg)
-
 
 def main(args=None):
     rclpy.init(args=args)

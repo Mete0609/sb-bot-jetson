@@ -1,6 +1,7 @@
 from setuptools import find_packages, setup
-
-package_name = 'controller_bridge'
+import os
+from glob import glob
+package_name = 'sb_bot_navigation2'
 
 setup(
     name=package_name,
@@ -10,17 +11,20 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
+        (os.path.join('share', package_name, 'maps'), glob('maps/*.yaml')),
+        (os.path.join('share', package_name, 'maps'), glob('maps/*.pgm'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='sb-bot',
-    maintainer_email='sb-bot@todo.todo',
+    maintainer_email='1462150552@qq.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'controller_bridge_node = controller_bridge.controller_bridge_node:main'
         ],
     },
 )

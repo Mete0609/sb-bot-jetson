@@ -38,8 +38,10 @@ class MotorControllerNode(Node):
         self.current_left_speed = left_speed
         self.current_right_speed = right_speed
         try:
-            left_cmd = f"#L7={left_speed}!"
-            right_cmd = f"#R7={-right_speed}!"  # 右轮方向取负
+            left_cmd = f"#L7={-left_speed}!"
+            right_cmd = f"#R7={right_speed}!"  # 右轮方向取负
+            # left_cmd = f"#L7={-left_speed}!"
+            # right_cmd = f"#R7={right_speed}!"  # 右轮方向取负
             self.get_logger().info(f"发送命令: {left_cmd.strip()} | {right_cmd.strip()}")
             self.ser.write(left_cmd.encode())
             self.ser.write(right_cmd.encode())
@@ -88,13 +90,17 @@ class MotorControllerNode(Node):
                 right_val = int(right_str[1])
 
                 # ✅ 发布时右轮取反
-                self.left_encoder_pub.publish(Int32(data=left_val))
-                self.right_encoder_pub.publish(Int32(data=-right_val))
+                # self.left_encoder_pub.publish(Int32(data=left_val))
+                # self.right_encoder_pub.publish(Int32(data=-right_val))
+
+                self.left_encoder_pub.publish(Int32(data=-left_val))
+                self.right_encoder_pub.publish(Int32(data=right_val))
 
                 # ✅ 打印信息
-                self.get_logger().info(
-                    f"📥 接收串口数据: L={left_val}, R={right_val} | 📤 发布到 bridge: L={left_val}, R={-right_val}"
-                )
+                if(left_val != 0 or right_val != 0):
+                    self.get_logger().info(
+                        f"📥 接收串口数据: L={left_val}, R={right_val} | 📤 发布到 bridge: L={-left_val}, R={right_val}"
+                    )
 
             except Exception as e:
                 self.get_logger().warn(f"解析错误: \"{line}\" -> {e}")
