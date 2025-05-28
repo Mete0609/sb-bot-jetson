@@ -1,0 +1,32 @@
+slam_toolbox:
+  ros__parameters:
+    use_sim_time: false
+
+    # 基础框架设置
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint  # 或 base_link，与你 URDF 中保持一致
+    scan_topic: /scan_filtered
+
+    # 不使用里程计与IMU
+    use_odometry: false
+    use_nav_sat: false
+    use_landmarks: false
+
+    # 地图发布设置
+    publish_map: true
+    publish_transform: true
+    map_update_interval: 2.0
+
+    # 地图分辨率、范围等参数
+    resolution: 0.05
+    max_laser_range: 10.0
+    minimum_time_interval: 0.3
+
+    # 后端优化
+    loop_detection_period: 5.0
+    loop_search_radius: 6.0
+    loop_match_max_distance: 3.0
+    minimum_score: 0.55
+    optimizer_max_iterations: 10
+    optimizer_timeout: 0.05
